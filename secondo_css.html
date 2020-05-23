@@ -1,0 +1,362 @@
+<!-- Introduction to Basic CSS
+Cascading Style Sheets (CSS) tell the browser how to display the text and other
+content that you write in HTML.
+
+Note that CSS is case-sensitive so be careful with your capitalization.
+
+CSS has been adopted by all major browsers and allows you to control:
+
+color
+fonts
+positioning
+spacing
+sizing
+decorations
+transitions
+There are three main ways to apply CSS styling.
+You can apply inline styles directly to HTML elements with the style attribute.
+Alternatively, you can place CSS rules within style tags in an HTML document.
+Finally, you can write CSS rules in an external style sheet, then reference
+that file in the HTML document.
+Even though the first two options have their use cases, most developers prefer
+external style sheets because they keep the styles separate from the HTML
+elements.
+This improves the readability and reusability of your code.
+
+The idea behind CSS is that you can use a selector to target an HTML element
+in the DOM (Document Object Model) and then apply a variety of attributes to
+that element to change the way it is displayed on the page.
+
+In this section, you'll see how adding CSS styles to the elements of your
+CatPhotoApp can change it from simple text to something more.
+
+Note: Some browser extensions may interfere with elements on the page.
+If the tests fail, try disabling your extensions for the most
+reliable experience.-->
+
+<!--  Basic CSS: Change the Color of Text
+Now let's change the color of some of our text.
+
+We can do this by changing the style of your h2 element.
+
+The property that is responsible for the color of an element's text is the
+color style property.
+
+Here's how you would set your h2 element's text color to blue:
+
+<h2 style="color: blue;">CatPhotoApp</h2>
+
+Note that it is a good practice to end inline style declarations with a ; .
+
+Change your h2 element's style so that its text color is red.
+
+Your h2 element should have a style declaration.
+Your h2 element should have color set to red.
+Your style declaration should end with a ; . -->
+<h2 style="color:red;">CatPhotoApp</h2>
+
+<!-- Use CSS Selectors to Style Elements
+With CSS, there are hundreds of CSS properties that you can use to change the
+way an element looks on your page.
+
+When you entered <h2 style="color: red;">CatPhotoApp</h2>, you were styling that
+individual h2 element with inline CSS, which stands for Cascading Style Sheets.
+
+That's one way to specify the style of an element, but there's a better way to
+apply CSS.
+
+At the top of your code, create a style block like this:
+
+<style>
+</style>
+Inside that style block, you can create a CSS selector for all h2 elements.
+For example, if you wanted all h2 elements to be red, you would add a style rule
+that looks like this:
+
+<style>
+  h2 {
+    color: red;
+  }
+</style>
+Note that it's important to have both opening and closing curly braces ({ and })
+ around each element's style rule(s). You also need to make sure that your
+ element's style definition is between the opening and closing style tags.
+ Finally, be sure to add a semicolon to the end of each of your element's
+ style rules.
+
+Delete your h2 element's style attribute, and instead create a CSS style block.
+Add the necessary CSS to turn all h2 elements blue.
+
+The style attribute should be removed from your h2 element.
+You should create a style element.
+Your h2 element should be blue.
+Your stylesheet h2 declaration should be valid with a semicolon and closing brace.
+All your style elements should be valid and have closing tags.-->
+<style>
+h2 {
+  color:blue;
+}
+</style>
+
+<!-- Use a CSS Class to Style an Element
+Classes are reusable styles that can be added to HTML elements.
+
+Here's an example CSS class declaration:
+
+<style>
+  .blue-text {
+    color: blue;
+  }
+</style>
+You can see that we've created a CSS class called blue-text within the <style>
+tag.
+You can apply a class to an HTML element like this:
+<h2 class="blue-text">CatPhotoApp</h2>
+Note that in your CSS style element, class names start with a period. In your
+HTML elements' class attribute, the class name does not include the period.
+
+Inside your style element, change the h2 selector to .red-text and update
+the color's value from blue to red.
+
+Give your h2 element the class attribute with a value of 'red-text'.
+
+Your h2 element should be red.
+Your h2 element should have the class red-text.
+Your stylesheet should declare a red-text class and have its color set to red.
+You should not use inline style declarations like style="color: red" in your
+h2 element.-->
+<style>
+  .red-text {
+    color: red;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+
+<!-- Style Multiple Elements with a CSS Class
+Classes allow you to use the same CSS styles on multiple HTML elements.
+You can see this by applying your red-text class to the first p element.
+
+Your h2 element should be red.
+Your h2 element should have the class red-text.
+Your first p element should be red.
+Your second and third p elements should not be red.
+Your first p element should have the class red-text.-->
+<style>
+  .red-text {
+    color: red;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+<main>
+  <p class='red-text'>Click here to view more <a href="#">cat photos</a>.</p>
+
+<!--Change the Font Size of an Element
+Font size is controlled by the font-size CSS property, like this:
+
+h1 {
+  font-size: 30px;
+}
+Inside the same <style> tag that contains your red-text class, create an entry
+for p elements and set the font-size to 16 pixels (16px).
+
+Between the style tags, give the p elements font-size of 16px.
+Browser and Text zoom should be at 100%. -->
+<style>
+  .red-text {
+    color: red;
+  }
+  p {
+    font-size: 16px;
+  }
+</style>
+
+<!-- Set the Font Family of an Element
+You can set which font an element should use, by using the font-family property.
+
+For example, if you wanted to set your h2 element's font to sans-serif, you
+would use the following CSS:
+
+h2 {
+  font-family: sans-serif;
+}
+Make all of your p elements use the monospace font.
+
+Your p elements should use the font monospace.-->
+<style>
+  .red-text {
+    color: red;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+</style>
+<!-- Import a Google Font
+In addition to specifying common fonts that are found on most operating systems,
+we can also specify non-standard, custom web fonts for use on our website.
+There are many sources for web fonts on the Internet.
+For this example we will focus on the Google Fonts library.
+
+Google Fonts is a free library of web fonts that you can use in your CSS by
+referencing the font's URL.
+
+So, let's go ahead and import and apply a Google font (note that if Google is
+blocked in your country, you will need to skip this challenge).
+
+To import a Google Font, you can copy the font(s) URL from the Google Fonts
+library and then paste it in your HTML.
+For this challenge, we'll import the Lobster font.
+To do this, copy the following code snippet and paste it into the top of your
+code editor (before the opening style element):
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+Now you can use the Lobster font in your CSS by using Lobster as the
+FAMILY_NAME as in the following example:
+font-family: FAMILY_NAME, GENERIC_NAME;.
+
+The GENERIC_NAME is optional, and is a fallback font in case the other
+specified font is not available. This is covered in the next challenge.
+
+Family names are case-sensitive and need to be wrapped in quotes if there is a
+space in the name. For example, you need quotes to use the "Open Sans" font,
+but not to use the Lobster font.
+
+Create a font-family CSS rule that uses the Lobster font, and ensure that it
+will be applied to your h2 element.
+
+You should import the Lobster font.
+Your h2 element should use the font Lobster.
+You should use an h2 CSS selector to change the font.
+Your p element should still use the font monospace.-->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+  h2{
+    font-family:Lobster;
+  }
+</style>
+<!-- Specify How Fonts Should Degrade
+There are several default fonts that are available in all browsers.
+These generic font families include monospace, serif and sans-serif
+
+When one font isn't available, you can tell the browser to "degrade" to another
+font.
+
+For example, if you wanted an element to use the Helvetica font, but degrade to
+the sans-serif font when Helvetica isn't available, you will specify it as
+follows:
+
+p {
+  font-family: Helvetica, sans-serif;
+}
+Generic font family names are not case-sensitive. Also, they do not need quotes
+because they are CSS keywords.
+
+To begin, apply the monospace font to the h2 element, so that it now has two
+fonts - Lobster and monospace.
+
+In the last challenge, you imported the Lobster font using the link tag.
+Now comment out that import of the Lobster font (using the HTML comments you
+learned before) from Google Fonts so that it isn't available anymore.
+Notice how your h2 element degrades to the monospace font.
+
+Note: If you have the Lobster font installed on your computer, you won't see the
+ degradation because your browser is able to find the font.
+
+Your h2 element should use the font Lobster.
+Your h2 element should degrade to the font monospace when Lobster is not
+available.
+You should comment out your call to Google for the Lobster font by putting
+<!-- in front of it.
+You should close your comment by adding -->.-->
+<!--<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> -->
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, monospace;
+  }
+</style>
+<!--  Size Your Images
+CSS has a property called width that controls an element's width. Just like with fonts, we'll use px (pixels) to specify the image's width.
+
+For example, if we wanted to create a CSS class called larger-image that gave HTML elements a width of 500 pixels, we'd use: -->
+
+<style>
+  .larger-image {
+    width: 500px;
+  }
+</style>
+<!--
+Create a class called smaller-image and use it to resize the image so that it's only 100 pixels wide.
+
+Note: Due to browser implementation differences, you may need to be at 100% zoom to pass the tests on this challenge.
+
+Your img element should have the class smaller-image.
+Your image should be 100 pixels wide. Browser zoom should be at 100%.-->
+  <style>
+  .smaller-image {
+    width: 100px
+  }
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+<main>
+  <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img class="smaller-image" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+
+<!--
+  Add Borders Around Your Elements
+CSS borders have properties like style, color and width.
+
+For example, if we wanted to create a red, 5 pixel border around an HTML element,
+we could use this class: -->
+
+<style>
+  .thin-red-border {
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+  }
+</style>
+<!--
+Create a class called thick-green-border.
+This class should add a 10px, solid, green border around an HTML element.
+Apply the class to your cat photo.
+
+Remember that you can apply multiple classes to an element using its class
+attribute, by separating each class name with a space. For example:
+<img class="class1 class2">
+
+Your img element should have the class smaller-image.
+Your img element should have the class thick-green-border.
+Your image should have a border width of 10px.
+Your image should have a border style of solid.
+The border around your img element should be green. -->
