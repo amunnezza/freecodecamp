@@ -64,3 +64,174 @@ Use the fullCard class to select the element.
 
 Your code should change the width property of the card to 245 pixels by using
 the fullCard class selector.-->
+<style>
+  h4 {
+    text-align: center;
+  }
+  p {
+    text-align: justify;
+  }
+  .links {
+    margin-right: 20px;
+    text-align: left;
+  }
+  .fullCard {
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+    width: 245px;
+  }
+  .cardContent {
+    padding: 10px;
+  }
+</style>
+<!-- Adjust the Height of an Element Using the height Property
+You can specify the height of an element using the height property in CSS, similar to the width property. Here's an example that changes the height of an image to 20px:
+
+img {
+  height: 20px;
+}
+Add a height property to the h4 tag and set it to 25px.
+
+Note: You may need to be at 100% zoom to pass the test on this challenge.
+
+Your code should change the h4 height property to a value of 25 pixels.-->
+<style>
+  h4 {
+    text-align: center;
+    height:25px;
+
+  }
+  p {
+    text-align: justify;
+  }
+  .links {
+    margin-right: 20px;
+    text-align: left;
+  }
+  .fullCard {
+    width: 245px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+  }
+  .cardContent {
+    padding: 10px;
+  }
+</style>
+<!-- Use the strong Tag to Make Text Bold
+To make text bold, you can use the strong tag. This is often used to draw attention to text 
+and symbolize that it is important. With the strong tag, the browser applies the CSS of 
+font-weight: bold; to the element.
+
+Wrap a strong tag around "Stanford University" inside the p tag (do not include the period).
+
+Your code should add one strong tag to the markup.
+The strong tag should be inside the p tag.
+The strong tag should wrap around the words "Stanford University".-->
+<div class="fullCard">
+  <div class="cardContent">
+    <div class="cardText">
+      <h4>Google</h4>
+      <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at <strong>Stanford University</strong>.</p>
+    </div>
+<!--Adjust the Height of an Element Using the height PropertyPassed
+You can specify the height of an element using the height property in CSS, similar to the width property. Here's an example that changes the height of an image to 20px:
+
+img {
+  height: 20px;
+}
+Add a height property to the h4 tag and set it to 25px.
+
+Note: You may need to be at 100% zoom to pass the test on this challenge.
+
+Your code should change the h4 height property to a value of 25 pixels.
+ -->
+ 
+ 
+ <!-- Use the u Tag to Underline Text
+To underline text, you can use the u tag. This is often used to signify that a section of text is important, or something to remember. 
+With the u tag, the browser applies the CSS of text-decoration: underline; to the element.
+
+Wrap the u tag only around the text "Ph.D. students".
+
+Note: Try to avoid using the u tag when it could be confused for a link. Anchor tags also have a default underlined formatting.
+
+Your code should add a u tag to the markup.
+The u tag should wrap around the text "Ph.D. students". -->
+<p>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</p>
+
+<!-- Use the em Tag to Italicize Text
+To emphasize text, you can use the em tag. This displays text as italicized, as the browser applies the CSS of font-style: italic; to the element.
+
+Wrap an em tag around the contents of the paragraph tag to give it emphasis.
+
+Your code should add an em tag to the markup.
+The em tag should wrap around the contents of the p tag but not the p tag itself.-->
+<p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>
+
+<!--Use the s Tag to Strikethrough Text
+To strikethrough text, which is when a horizontal line cuts across the characters, you can use the s tag. It shows that a section of text is no longer valid. With the s tag, the browser applies the CSS of text-decoration: line-through; to the element.
+
+Wrap the s tag around "Google" inside the h4 tag and then add the word Alphabet beside it, which should not have the strikethrough formatting.
+
+Your code should add one s tag to the markup.
+A s tag should wrap around the Google text in the h4 tag. It should not contain the word Alphabet.
+You should include the word "Alphabet" in the h4 tag, without strikethrough formatting. -->
+<h4><s>Google</s> Alphabet </h4>
+<!--Create a Horizontal Line Using the hr Element
+You can use the hr tag to add a horizontal line across the width of its containing element. This can be used to define a change in topic or to visually separate groups of content.
+
+Add an hr tag underneath the h4 which contains the card title.
+
+Note: In HTML, hr is a self-closing tag, and therefore doesn't need a separate closing tag.
+
+Your code should add an hr tag to the markup.
+The hr tag should come between the title and the paragraph. -->
+<h4><s>Google</s>Alphabet</h4>
+<hr>
+      <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>
+	  <!-- Adjust the background-color Property of Text
+Instead of adjusting your overall background or the color of the text to make the foreground easily readable, you can add a background-color to the element holding the text you want to emphasize. This challenge uses rgba() instead of hex codes or normal rgb().
+
+rgba stands for:
+  r = red
+  g = green
+  b = blue
+  a = alpha/level of opacity
+The RGB values can range from 0 to 255. The alpha value can range from 1, which is fully opaque or a solid color, to 0, which is fully transparent or clear. rgba() is great to use in this case, as it allows you to adjust the opacity. This means you don't have to completely block out the background.
+
+You'll use background-color: rgba(45, 45, 45, 0.1) for this challenge. It produces a dark gray color that is nearly transparent given the low opacity value of 0.1.
+
+To make the text stand out more, adjust the background-color of the h4 element to the given rgba() value.
+
+Also for the h4, remove the height property and add padding of 10px.
+
+Your code should add a background-color property to the h4 element set to rgba(45, 45, 45, 0.1).
+Your code should add a padding property to the h4 element and set it to 10 pixels.
+The height property on the h4 element should be removed.-->
+<style>
+  h4 {
+    text-align: center;
+    padding:10px;
+  background-color: rgba(45, 45, 45, 0.1);
+  }
+ 
+ <!-- Adjust the Size of a Header Versus a Paragraph Tag
+The font size of header tags (h1 through h6) should generally be larger than the font size of paragraph tags. 
+This makes it easier for the user to visually understand the layout and level of importance of everything on the page. 
+You use the font-size property to adjust the size of the text in an element.
+
+To make the heading significantly larger than the paragraph, change the font-size of the h4 tag to 27 pixels.
+
+Your code should add a font-size property to the h4 element set to 27 pixels.-->
+h4 {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+    font-size:27px;
+
+  }
