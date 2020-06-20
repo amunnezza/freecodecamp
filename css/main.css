@@ -90,6 +90,12 @@ body {
   height: auto;
   padding: 0px 10px 0px 20px;
 }
+#box-image1 {
+  float: right;
+  width: 20%;
+  height: auto;
+  padding: 0px 10px 0px 20px;
+}
 #box-imagew {
   float: right;
   width: 24vw;
@@ -117,7 +123,7 @@ a {
   text-align: center;
   font-size: 1.7em;
 }
-.formula { 
+.formula {
         color:green;
         font-weight:bold;
         }
