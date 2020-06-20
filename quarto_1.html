@@ -382,8 +382,8 @@ Your for attribute value should match the id value on the email input.
 </body>
 
 <!-- Applied Accessibility: Wrap Radio Buttons in a fieldset Element for Better Accessibility
-The next form topic covers accessibility of radio buttons.
-Each choice is given a label with a for attribute tying to the id of the corresponding item as covered in the last challenge.
+The next form topic covers accessibility of radio buttons. 
+Each choice is given a label with a for attribute tying to the id of the corresponding item as covered in the last challenge. 
 Since radio buttons often come in a group where the user must choose one, there's a way to semantically show the choices are part of a set.
 
 The fieldset tag surrounds the entire grouping of radio buttons to achieve this. It often uses a legend tag to provide a description for the grouping, which is read by screen readers for each choice in the fieldset element.
@@ -731,8 +731,8 @@ Your code should change the text color for the button to the dark blue.-->
 </body>
 
 Applied Accessibility: Give Links Meaning by Using Descriptive Link Text
-Screen reader users have different options for what type of content their device reads.
-This includes skipping to (or over) landmark elements, jumping to the main content, or getting a
+Screen reader users have different options for what type of content their device reads. 
+This includes skipping to (or over) landmark elements, jumping to the main content, or getting a 
 page summary from the headings. Another option is to only hear the links available on a page.
 
 Screen readers do this by reading the link text, or what's between the anchor (a) tags. Having a list of "click here" or "read more" links isn't helpful. Instead, you should use brief but descriptive text within the a tags to provide more meaning for these users.
@@ -748,8 +748,8 @@ The a element should have a closing tag.
   </header>
   <article>
     <h2>Defeating your Foe: the Red Dot is Ours!</h2>
-    <p>Felines the world over have been waging war on the most persistent of foes.
-	This red nemesis combines both cunning stealth and lightening speed. But chin up, fellow fighters,
+    <p>Felines the world over have been waging war on the most persistent of foes. 
+	This red nemesis combines both cunning stealth and lightening speed. But chin up, fellow fighters, 
 	our time for victory may soon be near. Click here for <a href="">information about batteries</a></p>
   </article>
 </body>
@@ -782,26 +782,26 @@ Your code should set the accesskey attribute on the a tag with the id of "second
 
 
     <h2><a id="second" href="#" accesskey="c">Is Chuck Norris a Cat Person?</a></h2>
-
+	
 	Applied Accessibility: Use tabindex to Add Keyboard Focus to an Element
-The HTML tabindex attribute has three distinct functions relating to an element's keyboard focus.
-	When it's on a tag, it indicates that element can be focused on.
+The HTML tabindex attribute has three distinct functions relating to an element's keyboard focus. 
+	When it's on a tag, it indicates that element can be focused on. 
 	The value (an integer that's positive, negative, or zero) determines the behavior.
 
-	Certain elements, such as links and form controls, automatically receive keyboard focus when a user
-tabs through a page.
-	It's in the same order as the elements come in the HTML source markup. This same functionality can
+	Certain elements, such as links and form controls, automatically receive keyboard focus when a user 
+tabs through a page. 
+	It's in the same order as the elements come in the HTML source markup. This same functionality can 
 be given to other elements, such as div, span, and p, by placing a tabindex="0" attribute on them. Here's an example:
 
 <div tabindex="0">I need keyboard focus!</div>
 
-	Note: A negative tabindex value (typically -1) indicates that an element is focusable, but is not reachable by the keyboard.
-	This method is generally used to bring focus to content programmatically (like when a div used for a pop-up window
+	Note: A negative tabindex value (typically -1) indicates that an element is focusable, but is not reachable by the keyboard. 
+	This method is generally used to bring focus to content programmatically (like when a div used for a pop-up window 
 is activated), and is beyond the scope of these challenges.
 
-	Camper Cat created a new survey to collect information about his users. He knows input fields automatically
-get keyboard focus, but he wants to make sure his keyboard users pause at the instructions while tabbing through
-the items. Add a tabindex attribute to the p tag and set its value to "0". Bonus - using tabindex also enables
+	Camper Cat created a new survey to collect information about his users. He knows input fields automatically 
+get keyboard focus, but he wants to make sure his keyboard users pause at the instructions while tabbing through 
+the items. Add a tabindex attribute to the p tag and set its value to "0". Bonus - using tabindex also enables 
 the CSS pseudo-class :focus to work on the p tag.
 
 Your code should add a tabindex attribute to the p tag that holds the form instructions.
@@ -877,8 +877,6 @@ Your code should set the tabindex attribute on the submit input tag to a value o
 
     </nav>
   </header>
-
-
   <form>
     <label for="search">Search:</label>
 
